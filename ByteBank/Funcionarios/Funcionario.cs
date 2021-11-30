@@ -14,11 +14,6 @@ namespace ByteBank.Funcionarios
         public string CPF { get; private set; }
         public double Salario { get; set; }
 
-        internal double GetTotalBonus()
-        {
-            throw new NotImplementedException();
-        }
-
         public Funcionario(string cpf)
         {
             Console.WriteLine("Criando Funcionário!");
