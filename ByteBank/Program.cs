@@ -13,7 +13,7 @@ namespace ByteBank
         {
             GerenciadorBonus gerenciador = new GerenciadorBonus();
 
-            Funcionario yanne = new Funcionario("012.015.032-10");
+            Funcionario yanne = new Funcionario("015.015.015-15");
             gerenciador.Registrar(yanne);
             yanne.Nome = "Yanne Lagarde";
             //yanne.CPF = ;
