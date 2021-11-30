@@ -15,12 +15,20 @@ namespace ByteBank
 
             Funcionario yanne = new Funcionario("012.015.032-10");
             gerenciador.Registrar(yanne);
-
             yanne.Nome = "Yanne Lagarde";
             //yanne.CPF = ;
             yanne.Salario = 2000;
 
+
+
+            yanne.AumentarSalario(); // <<< AUMENTAR SALARIO
+            Console.WriteLine("Novo salário da Yanne " + yanne.Salario);
+
+
+
             Console.WriteLine(Funcionario.TotalFuncionarios);
+
+
 
             Console.WriteLine(yanne.Nome);
             Console.WriteLine("Salário R$ " + yanne.Salario);
@@ -37,7 +45,16 @@ namespace ByteBank
             //kolob.CPF = ;
             kolob.Salario = 5000;
 
+
+
+            kolob.AumentarSalario();  // <<< AUMENTAR SALARIO
+            Console.WriteLine("Novo salário da Kolob " + kolob.Salario);
+
+
+
             Console.WriteLine(Funcionario.TotalFuncionarios);
+
+
 
             Console.WriteLine(kolob.Nome);
             Console.WriteLine("Salário R$ " + kolob.Salario);

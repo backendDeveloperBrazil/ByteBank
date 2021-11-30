@@ -12,8 +12,13 @@ namespace ByteBank.Funcionarios
         {
             Console.WriteLine("Criando Diretor!");
         }
-        
-        
+
+        public override void AumentarSalario()
+        {
+            Salario *= 1.15;
+        }
+
+
         public override double GetBonus()//override sobre poem a classe funcionário
         {
             return Salario + base.GetBonus();

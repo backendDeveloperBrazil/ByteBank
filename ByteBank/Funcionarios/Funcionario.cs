@@ -23,6 +23,13 @@ namespace ByteBank.Funcionarios
             TotalFuncionarios++;
         }
 
+        public virtual void AumentarSalario()
+        {
+            //Salario = Salario + (Salario * 0.1);
+            //Salario = Salario * 1.1;
+            Salario *= 1.1;
+        }
+
         public virtual double GetBonus()
         {
             return Salario * 0.10;
