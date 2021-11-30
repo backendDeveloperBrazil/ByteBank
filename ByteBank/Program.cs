@@ -16,7 +16,7 @@ namespace ByteBank
             Funcionario yanne = new Funcionario(2000, "015.015.015-15");
             gerenciador.Registrar(yanne);
             yanne.Nome = "Yanne Lagarde";
-            //yanne.CPF = ;
+            //yanne.CPF = ; 
             
 
 
