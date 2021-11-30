@@ -8,7 +8,7 @@ namespace ByteBank.Funcionarios
 {
     public class Diretor : Funcionario //Usar : diz que esta classe herda os campos da classe Funcionário
     {
-        public Diretor(string cpf) : base(cpf)
+        public Diretor(string cpf) : base(5000, cpf)
         {
             Console.WriteLine("Criando Diretor!");
         }

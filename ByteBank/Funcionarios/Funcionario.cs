@@ -12,17 +12,19 @@ namespace ByteBank.Funcionarios
 
         public string Nome { get; set; }
         public string CPF { get; private set; }
-        public double Salario { get; set; }
+        public double Salario { get; protected set; }
 
-        public Funcionario(string cpf)
+        public Funcionario(double salario, string cpf)
         {
             Console.WriteLine("Criando Funcionário!");
 
+            Salario = salario;
             CPF = cpf;
             
             TotalFuncionarios++;
         }
 
+       
         public virtual void AumentarSalario()
         {
             //Salario = Salario + (Salario * 0.1);
