@@ -21,8 +21,8 @@ namespace ByteBank.Funcionarios
 
         public override double GetBonus()//override sobre poem a classe funcionário
         {
-            return Salario + base.GetBonus();
+            return Salario * 0.5;
         }
     }
 }
- 
+  
