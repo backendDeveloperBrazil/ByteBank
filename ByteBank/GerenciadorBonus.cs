@@ -15,7 +15,8 @@ namespace ByteBank
             _totalBonus += funcionario.GetBonus();
         }
 
-        public double GetTotalBonus() //Este código é a forma de recuperar a informacao!
+        public double GetTotalBonus() //Este código é a forma de recuperar a informacao
+                                      //porém não consigo chamar ele lá em Program.cs, na linha 44!
         {
             return _totalBonus;
         }
