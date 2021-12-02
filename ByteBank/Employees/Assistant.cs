@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByteBank.Funcionarios
+namespace ByteBank.Employees
 {
-    public class Auxiliar : Funcionario
+    public class Assistant : Employee
     {
-        public Auxiliar(string cpf) : base(2000, cpf)
+        public Assistant(string cpf) : base(2000, cpf)
         {
             //Aqui já colocamos os valores acima
         }

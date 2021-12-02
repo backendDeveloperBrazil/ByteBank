@@ -1,17 +1,19 @@
-﻿using System;
+﻿using ByteBank.Systems;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByteBank.Funcionarios
+namespace ByteBank.Employees
 {
-    public class GerenteContas : Funcionario
+    public class AccountManager : Autenticatable
     {
-        public GerenteContas(string cpf) : base(4000, cpf)
+        public AccountManager(string cpf) : base(4000, cpf)
         {
-            //Aqui já colocamos os valores acima
+            Console.WriteLine("Criando Gerente de Contas");
         }
+
         public override void AumentarSalario()
         {
             Salario *= 1.05;

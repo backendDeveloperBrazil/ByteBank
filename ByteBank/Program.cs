@@ -1,4 +1,5 @@
-﻿using ByteBank.Funcionarios;
+﻿using ByteBank.Employees;
+using ByteBank.Systems;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,30 +14,60 @@ namespace ByteBank
         {
             /*Program program = new Program(); //Este é um outro meio de chamar CalcularBonus(); Assim como o método acima
             program.CalcularBonus();
+
+            Este modelo acima e também abaixo é um método de instância.
             */
 
-            CalcularBonus(); //Para funcionar, devemos tornar o objeto public void CalcularBonus() Static 
+            // CalcularBonus(); //Para funcionar, devemos tornar o objeto public void CalcularBonus() Static 
 
+            UsarSistema();
 
             Console.ReadLine();
+        }
+
+        public static void UsarSistema()
+        {
+            InternalSystem sistemaInterno = new InternalSystem();
+
+            Director yanne = new Director("655.333.777.10");
+            yanne.Nome = "Yanne Lagarde";
+            yanne.Senha = "123";
+
+            AccountManager shiela = new AccountManager("890.098.890-89");
+            shiela.Nome = "Shiela Lagarde";
+            shiela.Senha = "abc";
+
+            //Designer junior = new Designer("555.333.777.10");
+            //junior.Nome = "Junior Lagarde";
+
+            sistemaInterno.Log(yanne, "123");
+            sistemaInterno.Log(shiela, "abc");
+            
+            //sistemaInterno.Log(junior, "abc123");
+
+
         }
 
         public static void CalcularBonus()
         {
             GerenciadorBonus gerenciadorBonus = new GerenciadorBonus();
 
-            Diretor yanne = new Diretor("655.333.777.10");
+            Director yanne = new Director("655.333.777.10");
             yanne.Nome = "Yanne Lagarde";
 
-            GerenteContas shiela = new GerenteContas("890.098.890-89");
+            AccountManager shiela = new AccountManager("890.098.890-89");
             shiela.Nome = "Shiela Lagarde";
 
             Designer junior = new Designer("555.333.777.10");
             junior.Nome = "Junior Lagarde";
 
-            Auxiliar gisele = new Auxiliar("777.789.777-70");
+            Assistant gisele = new Assistant("777.789.777-70");
             gisele.Nome = "Gisele Freitas";
 
+            Developer edemir = new Developer("011.011.011-10");
+            edemir.Nome = "Edemir";
+
+            gerenciadorBonus.Registrar(edemir);
             gerenciadorBonus.Registrar(yanne);
             gerenciadorBonus.Registrar(shiela);
             gerenciadorBonus.Registrar(junior);

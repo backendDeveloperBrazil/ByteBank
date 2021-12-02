@@ -1,4 +1,4 @@
-﻿using ByteBank.Funcionarios;
+﻿using ByteBank.Employees;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace ByteBank
     public class GerenciadorBonus
     {
         private double _totalBonus; //Aqui tornamos essa classe Privada
-        public void Registrar(Funcionario funcionario)
+        public void Registrar(Employee funcionario)
         {
             _totalBonus += funcionario.GetBonus();
         }

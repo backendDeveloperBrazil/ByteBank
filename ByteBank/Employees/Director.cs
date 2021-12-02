@@ -1,14 +1,15 @@
-﻿using System;
+﻿using ByteBank.Systems;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByteBank.Funcionarios
+namespace ByteBank.Employees
 {
-    public class Diretor : Funcionario //Usar : diz que esta classe herda os campos da classe Funcionário
+    public class Director : Autenticatable //Usar : diz que esta classe herda os campos da classe Funcionário
     {
-        public Diretor(string cpf) : base(5000, cpf)
+        public Director(string cpf) : base(5000, cpf)
         {
             Console.WriteLine("Criando Diretor!");
         }
