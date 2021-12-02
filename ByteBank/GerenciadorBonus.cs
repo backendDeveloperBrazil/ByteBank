@@ -16,7 +16,7 @@ namespace ByteBank
         }
 
         public double GetTotalBonus() //Este código é a forma de recuperar a informacao
-                                      //porém não consigo chamar ele lá em Program.cs, na linha 44!
+                                      //porém não  consigo chamar ele lá em Program.cs, na linha 44!
         {
             return _totalBonus;
         }
