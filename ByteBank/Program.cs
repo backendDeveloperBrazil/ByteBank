@@ -54,7 +54,7 @@ namespace ByteBank
 
         public static void CalcularBonus()
         {
-            GerenciadorBonus gerenciadorBonus = new GerenciadorBonus();
+            BonusManager gerenciadorBonus = new BonusManager();
 
             Director yanne = new Director("655.333.777.10");
             yanne.Nome = "Yanne Lagarde";

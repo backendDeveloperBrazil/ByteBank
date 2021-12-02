@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace ByteBank
 {
-    public class GerenciadorBonus
+    public class BonusManager
     {
         private double _totalBonus; //Aqui tornamos essa classe Privada
-        public void Registrar(Employee funcionario)
+        public void Registrar(Employee employee)
         {
-            _totalBonus += funcionario.GetBonus();
+            _totalBonus += employee.GetBonus();
         }
 
         public double GetTotalBonus() //Este código é a forma de recuperar a informacao
