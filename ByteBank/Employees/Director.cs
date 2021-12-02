@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace ByteBank.Employees
 {
-    public class Director : Autenticatable //Usar : diz que esta classe herda os campos da classe Funcionário
+    public class Director : AuthenticatedEmployee //Usar : diz que esta classe herda os campos da classe Funcionário
     {
         public Director(string cpf) : base(5000, cpf)
         {
             Console.WriteLine("Criando Diretor!");
         }
+
 
         public override void AumentarSalario()
         {

@@ -27,7 +27,7 @@ namespace ByteBank
 
         public static void UsarSistema()
         {
-            InternalSystem sistemaInterno = new InternalSystem();
+            InternalSystem internalSystem = new InternalSystem();
 
             Director yanne = new Director("655.333.777.10");
             yanne.Nome = "Yanne Lagarde";
@@ -40,8 +40,12 @@ namespace ByteBank
             //Designer junior = new Designer("555.333.777.10");
             //junior.Nome = "Junior Lagarde";
 
-            sistemaInterno.Log(yanne, "123");
-            sistemaInterno.Log(shiela, "abc");
+            BusinessPartner business = new BusinessPartner();
+            business.Senha = "abcd1234";
+
+            internalSystem.Log(yanne, "123");
+            internalSystem.Log(shiela, "abc");
+            internalSystem.Log(business, "abcd1234");
             
             //sistemaInterno.Log(junior, "abc123");
 

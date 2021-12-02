@@ -9,9 +9,9 @@ namespace ByteBank.Systems
 {
     public class InternalSystem
     {
-        public bool Log(Autenticatable employee, string senha)
+        public bool Log(IAuthenticatable employee, string senha)
         {
-            bool userAuthenticated = employee.Autenticate(senha);
+            bool userAuthenticated = employee.Authenticate(senha);
 
             if (userAuthenticated)
             {
